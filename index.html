@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="description" content="Portfolio Desarrollador Web">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portfolio</title>
+
+    <!-- APIs Font-Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+</head>
+<body>
+
+<!-- Inicion -->
+<section id="inicio">
+    <div class="contenido">
+        <header>
+            <div class="contenido-header">
+                <h1>/PJ/</h1>
+                <nav id="nav" class="">
+                    <ul id="links">
+                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                        <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <!-- Iconos del menu responsivo -->
+                <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Iconos redes sociales -->
+                <div class="redes">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+        </header>
+        <div class="presentacion">
+            <p class="bienvenida">Bienvenidos</p>
+            <h2>Soy <span>Paulo Fernández</span>, Desarrolador Web</h2>
+            <p class="descripcion">
+                Te invito a que conozcas más sobre mí, algunos de los proyectos que he realizado 
+                y la pasión que tengo por el mundo de la programación.
+            </p>
+            <a href="#portfolio">Ir a Portfolio</a>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Sobre Mi -->
+<section id="sobremi">
+    <div class="contenedor-foto">
+        <img src="img/Foto CV.webp" alt="Mi foto">
+    </div>
+    <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola soy <span>Paulo Fernández</span></h2>
+        <h3>Desarrolador Web</h3>
+        <p>
+            El mundo del desarrollo de software se ha convertido en una pasión, la curiosidad que tengo sobre este mundo me a llevado a 
+            aprender varios lenguajes de programación y herramientas para poder entender mejor 
+            el funcionamiento de todo el proceso que lleva realizar un proyecto.
+        </p>
+        <p>
+            Realice el bachillerato de informática, también varios cursos online en las siguientes plataformas como Udemy, Google Activate. 
+            Soy autodidacta y esto me ha ayudado a la hora de realizar un proyecto o resolver un problema debido a que busco información en
+            las páginas oficiales. Me gusta el trabajo en equipo y el intercambio de ideas con diferentes colegas.
+        </p>
+        <a href="#">Descargar CV</a>
+    </div>
+</section>
+
+<!-- Seccion Servicios -->
+<section id="servicios">
+    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+    <div class="fila">
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+        <div class="servicio">
+            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+            <h4>Diseño de Sitio Web</h4>
+            <hr>
+            <ul class="servicios-tag">
+                <li>Web</li>
+                <li>Graphic</li>
+                <li>SEO</li>
+            </ul>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
+                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
+                deleniti dolorum nisi a consequatur.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Habilidades -->
+<section id="habilidades">
+    <div class="contenedor-skills" id="skills">
+        <h3 class="titulo-seccion">HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <div>
+                    <img src="img/MYSQL.webp" alt="">
+                    <h4>MYSQL</h4>
+                </div>
+                <div>
+                    <img src="img/PHP.webp" alt="">
+                    <h4>PHP</h4>
+                </div>
+                <div>
+                    <img src="img/JAVA.webp" alt="">
+                    <h4>JAVA</h3>
+                </div>
+                <div>
+                    <img src="img/HTML.webp" alt="">
+                    <h4>HTML</h4>
+                </div>
+                <div>
+                    <img src="img/CSS.webp" alt="">
+                    <h4>CSS</h4>
+                </div>
+            </div>
+        <div class="skill">
+            <div class="info">
+                <div>
+                    <img src="img/SPRINTBOOT.webp" alt="">
+                    <h4>SPRINT BOOT</h3>
+                </div>
+                <div>
+                    <img src="img/LARAVEL-1.webp" alt="">
+                    <h4>LARAVEL</h4>
+                </div>
+                <div>
+                    <img src="img/ANGULAR.webp" alt="">
+                    <h4>ANGULAR</h4>
+                </div>
+                <div>
+                    <img src="img/bootstrap.webp" alt="">
+                    <h4>BOOSTRAP</h4>
+                </div>
+                <div>
+                    <img src="img/DOCKER.webp" alt="">
+                    <h4>DOCKER</h4>
+                </div>
+                <div>
+                    <img src="img/GITHUB.webp" alt="">
+                    <h4>GITHUB</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seccion Portfolio -->
+<section id="portfolio">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="proyecto">
+            <div class="overlay">
+                <img src="assets/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion del Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ver video en minuto 47:12 -->
+<!-- Seccion Contacto -->
+<section id="contacto">
+
+</section>
+
+<!-- Seccion Footer -->
+<footer>  
+    <div class="redes">
+        <a href="" class="fa-brands fa-discord"></a> 
+        <a href="" class="fa-brands fa-github"></a> 
+        <a href="" class="fa-brands fa-linkedin"></a> 
+    </div>
+    <p>&copy;Copyright 2023, Paulo Fernández</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
