@@ -66,7 +66,7 @@ html {
     display: inline-block;
     margin-left: 10px;
     transition: .5s;
-    font-size: 25px;
+    font-size: 1.5625em;
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
@@ -89,27 +89,27 @@ html {
 }
 
 #inicio .contenido .presentacion .bienvenida {
-    font-size: 16px;
+    font-size: 1em;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
 #inicio .contenido .presentacion h2 {
-    font-size: 55px;
+    font-size: 3.4375em;
     margin-bottom: 25px;
     text-align: center;
 }
 
 #inicio .contenido .presentacion h2 span {
-    font-size: 25px;
+    font-size: 1.5625em;
     color: #41ec58;
 }
 
 #inicio .contenido .presentacion .descripcion {
     max-width: 700px;
     margin: 25px auto;
-    font-size: 18px;
+    font-size: 1.125em;
     text-align: center;
 }
 
@@ -132,6 +132,8 @@ html {
 
 #icono-nav {
     color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
     display: none;
 }
 
@@ -163,7 +165,7 @@ html {
 }
 
 #sobremi .sobremi .titulo-seccion {
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
@@ -172,7 +174,7 @@ html {
 }
 
 #sobremi .sobremi h2 {
-    font-size: 34px;
+    font-size: 2.125em;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
@@ -183,7 +185,7 @@ html {
 }
 
 #sobremi .sobremi h3 {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -191,7 +193,7 @@ html {
 }
 
 #sobremi .sobremi p {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 25px;
     color: #23205f;
     margin-bottom: 12px;
@@ -227,7 +229,7 @@ html {
 }
 
 #servicios .titulo-seccion {
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
@@ -256,7 +258,7 @@ html {
 }
 
 #servicios .fila .servicio h4 {
-    font-size: 22px;
+    font-size: 1.375em;
     margin-bottom: 25px;
 }
 
@@ -285,7 +287,7 @@ html {
 }
 
 #servicios .fila .servicio p {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 22px;
 }
 
@@ -304,7 +306,7 @@ html {
 
 #habilidades .contenedor-skills .titulo-seccion {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
@@ -342,7 +344,7 @@ html {
 
 #mis_proyectos .titulo-seccion {
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875em;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
@@ -407,7 +409,7 @@ footer a {
     color: #fff;
     display: inline-block;
     margin: 10px;
-    font-size: 26px;
+    font-size: 1.625em;
 }
 
 footer .redes a:hover {
@@ -417,15 +419,13 @@ footer .redes a:hover {
 
 /* SECCION RESPONSIVE Tablet*/
 @media screen and (max-width:800px) {
-    .redes {
+    .redes, nav {
         display: none;
     }
-    nav {
-        display: none;
-    }
+
     nav.responsive {
         display: block;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, 0.8);
         width: 100%;
         position: absolute;
         top: 48px;
@@ -444,7 +444,7 @@ footer .redes a:hover {
     }
 
     #inicio .contenido .presentacion h2 {
-        font-size: 40px;
+        font-size: 2.5em;
     }
 
     #sobremi {
@@ -462,7 +462,7 @@ footer .redes a:hover {
         text-align: center;
     }
     #sobremi .sobremi h2 {
-        font-size: 25px;
+        font-size: 1.5625em;
         text-align: center;
     }
 
