@@ -1,319 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <meta name="description" content="Portfolio Desarrollador Web">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Desarrollador Web especializado en Back-End con Laravel, PHP y MySQL.">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio</title>
 
     <!-- APIs Font-Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
 
-<!-- Inicion -->
-<section id="inicio">
-    <div class="contenido">
-        <header>
-            <div class="contenido-header">
-                <h1>/PJ/</h1>
-                <nav id="nav" class="">
-                    <ul id="links">
-                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
-                        <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
-                        <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
-                        <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
-                        <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
-                    </ul>
-                </nav>
-                <!-- Iconos del menu responsivo -->
-                <div id="icono-nav" onclick="responsiveMenu()">
-                    <i class="fa-solid fa-bars"></i>
+    <!-- Inicion -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>{ PJ }</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#mis_proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                        </ul>
+                    </nav>
+                    <!-- Iconos del menu responsivo -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- Iconos redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/paulo-fern%C3%A1ndez/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/PauloFernandez?tab=repositories"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                    </div>
                 </div>
-                <!-- Iconos redes sociales -->
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-discord"></i></a>
-                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Paulo Fernández</span>, Desarrollador Web</h2>
+                <p class="descripcion">
+                    Te invito a que conozcas más sobre mí, algunos de los proyectos que he realizado
+                    y la pasión que tengo por el mundo de la programación.
+                </p>
+                <a href="#mis_proyectos">Ir a Proyectos</a>
             </div>
-        </header>
-        <div class="presentacion">
-            <p class="bienvenida">Bienvenidos</p>
-            <h2>Soy <span>Paulo Fernández</span>, Desarrolador Web</h2>
-            <p class="descripcion">
-                Te invito a que conozcas más sobre mí, algunos de los proyectos que he realizado 
-                y la pasión que tengo por el mundo de la programación.
-            </p>
-            <a href="#portfolio">Ir a Portfolio</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seccion Sobre Mi -->
-<section id="sobremi">
-    <div class="contenedor-foto">
-        <img src="img/Foto CV.webp" alt="Mi foto">
-    </div>
-    <div class="sobremi">
-        <p class="titulo-seccion">Sobre Mi</p>
-        <h2>Hola soy <span>Paulo Fernández</span></h2>
-        <h3>Desarrolador Web</h3>
-        <p>
-            El mundo del desarrollo de software se ha convertido en una pasión, la curiosidad que tengo sobre este mundo me a llevado a 
-            aprender varios lenguajes de programación y herramientas para poder entender mejor 
-            el funcionamiento de todo el proceso que lleva realizar un proyecto.
-        </p>
-        <p>
-            Realice el bachillerato de informática, también varios cursos online en las siguientes plataformas como Udemy, Google Activate. 
-            Soy autodidacta y esto me ha ayudado a la hora de realizar un proyecto o resolver un problema debido a que busco información en
-            las páginas oficiales. Me gusta el trabajo en equipo y el intercambio de ideas con diferentes colegas.
-        </p>
-        <a href="#">Descargar CV</a>
-    </div>
-</section>
-
-<!-- Seccion Servicios -->
-<section id="servicios">
-    <h3 class="titulo-seccion">MIS SERVICIOS</h3>
-    <div class="fila">
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
+    <!-- Seccion Sobre Mi -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Foto CV.webp" alt="Mi foto">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola soy <span>Paulo Fernández</span></h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
+                Soy un programador web con un enfoque especial en el desarrollo back-end, con experiencia sólida en
+                <strong>Laravel</strong> y bases de datos como <strong>MySQL</strong> y <strong>MariaDB</strong>. Mi
+                enfoque siempre
+                está en la calidad del código, la
+                eficiencia en el desarrollo y la resolución de problemas complejos. Además, cuento con conocimientos
+                en pruebas automatizadas dentro del ecosistema Laravel.
             </p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
+                He trabajado con tecnologías como <strong>Docker</strong> para la creación de entornos de desarrollo
+                eficientes y escalables.
+                Me considero autodidacta, ya que siempre busco nuevas formas de aprender y mejorar mis habilidades,
+                completando cursos
+                en plataformas como el campus de <strong>Ademass</strong>, <strong>YouTube</strong> y
+                <strong>Udemy</strong>. Tengo
+                una certificación en <strong>Git y GitHub</strong>,
+                lo que me permite gestionar y versionar proyectos de manera eficiente.
             </p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
+                Mi objetivo es seguir creciendo en el ámbito del desarrollo web back-end y participar en proyectos
+                desafiantes que me permitan aplicar mis conocimientos y aprender nuevas tecnologías.
             </p>
+            <a href="Currículum.pdf">Descargar CV</a>
         </div>
-    </div>
-    <div class="fila">
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
-            </p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
-            </p>
-        </div>
-        <div class="servicio">
-            <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
-            <h4>Diseño de Sitio Web</h4>
-            <hr>
-            <ul class="servicios-tag">
-                <li>Web</li>
-                <li>Graphic</li>
-                <li>SEO</li>
-            </ul>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempore cupiditate quisquam 
-                perspiciatis, totam magnam ex aut reprehenderit vitae animi fuga dolores iste repellat quo 
-                deleniti dolorum nisi a consequatur.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seccion Habilidades -->
-<section id="habilidades">
-    <div class="contenedor-skills" id="skills">
-        <h3 class="titulo-seccion">HABILIDADES</h3>
-        <div class="skill">
-            <div class="info">
-                <div>
-                    <img src="img/MYSQL.webp" alt="">
-                    <h4>MYSQL</h4>
-                </div>
-                <div>
-                    <img src="img/PHP.webp" alt="">
-                    <h4>PHP</h4>
-                </div>
-                <div>
-                    <img src="img/JAVA.webp" alt="">
-                    <h4>JAVA</h3>
-                </div>
-                <div>
-                    <img src="img/HTML.webp" alt="">
-                    <h4>HTML</h4>
-                </div>
-                <div>
-                    <img src="img/CSS.webp" alt="">
-                    <h4>CSS</h4>
+    <!-- Seccion Habilidades -->
+    <section id="habilidades">
+        <div class="contenedor-skills" id="skills">
+            <h3 class="titulo-seccion">HABILIDADES</h3>
+            <div class="skill">
+                <div class="info">
+                    <div>
+                        <img src="img/LARAVEL-1.webp" alt="LARAVEL">
+                        <h4>LARAVEL</h4>
+                    </div>
+                    <div>
+                        <img src="img/PHP.webp" alt="PHP">
+                        <h4>PHP</h4>
+                    </div>
+                    <div>
+                        <img src="img/MYSQL.webp" alt="MYSQL">
+                        <h4>MYSQL</h4>
+                    </div>
+                    <div>
+                        <img src="img/DOCKER.webp" alt="DOCKER">
+                        <h4>DOCKER</h4>
+                    </div>
                 </div>
             </div>
-        <div class="skill">
-            <div class="info">
-                <div>
-                    <img src="img/SPRINTBOOT.webp" alt="">
-                    <h4>SPRINT BOOT</h3>
-                </div>
-                <div>
-                    <img src="img/LARAVEL-1.webp" alt="">
-                    <h4>LARAVEL</h4>
-                </div>
-                <div>
-                    <img src="img/ANGULAR.webp" alt="">
-                    <h4>ANGULAR</h4>
-                </div>
-                <div>
-                    <img src="img/bootstrap.webp" alt="">
-                    <h4>BOOSTRAP</h4>
-                </div>
-                <div>
-                    <img src="img/DOCKER.webp" alt="">
-                    <h4>DOCKER</h4>
-                </div>
-                <div>
-                    <img src="img/GITHUB.webp" alt="">
-                    <h4>GITHUB</h4>
+            <div class="skill">
+                <div class="info">
+                    <div>
+                        <img src="img/GITHUB.webp" alt="GITHUB">
+                        <h4>GITHUB</h4>
+                    </div>
+                    <div>
+                        <img src="img/bootstrap.webp" alt="BOOTSTRAP">
+                        <h4>BOOTSTRAP</h4>
+                    </div>
+                    <div>
+                        <img src="img/HTML.webp" alt="HTML">
+                        <h4>HTML</h4>
+                    </div>
+                    <div>
+                        <img src="img/CSS.webp" alt="CSS">
+                        <h4>CSS</h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Seccion Portfolio -->
-<section id="portfolio">
-    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
-    <div class="fila">
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto1.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
+    <!-- Seccion Portfolio -->
+    <section id="mis_proyectos">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <a href="https://">
+                        <img src="img/Torneo_Fútbol-2024.png" alt="proyecto1">
+                    </a>
+                    <div class="info">
+                        <p>Aplicación para gestión de torneos de fútbol desarrollada con Laravel y MySQL. Incluye
+                            funcionalidades de registro de torneos, equipos, jugadores, partidos, resultados etc.
+                            Desarrollado con pruebas automatizadas y alojado en VPS utilizando GitHub Actions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto2.jpg" alt="proyecto2">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto3.jpg" alt="proyecto3">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto2.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto4.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto5.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto6.jpg" alt="">
+                    <div class="info">
+                        <h4>Descripcion del Proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto3.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="fila">
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto4.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto5.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="proyecto">
-            <div class="overlay">
-                <img src="assets/proyecto6.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- Ver video en minuto 47:12 -->
-<!-- Seccion Contacto -->
-<section id="contacto">
+    </section>
 
-</section>
+    <!-- Seccion Servicios -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+                <h4>Desarrollo Back-End con Laravel</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>APIs RESTful</li>
+                    <li>MySQL</li>
+                </ul>
+                <p>
+                    Desarrollo aplicaciones y sistemas back-end con Laravel, utilizando bases de datos MySQL para la
+                    gestión de datos.
+                    Creo APIs seguras y eficientes, optimizando el rendimiento del servidor y la base de datos para una
+                    experiencia
+                    fluida y escalable.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web Monolito con Laravel</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>Livewire</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <p>
+                    Desarrollo sistemas monolito con autenticacion utilizando Laravel del lado back-end, utilizando
+                    bases de datos MySQL para la gestión de datos.
+                    Estilos de Bootstrap, utilizando Livewire para optimizar el rendimiento y mejorando la experiencia
+                    del usuario.
+                </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-code"></i></span>
+                <h4>Desarrollo Web full stack</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>Vue.js</li>
+                </ul>
+                <p>
+                    Desarrollo aplicaciones web full stack con Laravel del lado back-end, utilizando bases de datos
+                    MySQL para la gestión de datos.
+                    Utilizando Vue.js para el front-end, estilos de Bootstrap.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<!-- Seccion Footer -->
-<footer>  
-    <div class="redes">
-        <a href="" class="fa-brands fa-discord"></a> 
-        <a href="" class="fa-brands fa-github"></a> 
-        <a href="" class="fa-brands fa-linkedin"></a> 
-    </div>
-    <p>&copy;Copyright 2023, Paulo Fernández</p>
-</footer>
+    <!-- Seccion Footer -->
+    <footer>
+        <div class="redes">
+            <a href="" class="fa-brands fa-discord"></a>
+            <a href="https://github.com/PauloFernandez?tab=repositories" class="fa-brands fa-github"></a>
+            <a href="https://www.linkedin.com/in/paulo-fern%C3%A1ndez/" class="fa-brands fa-linkedin"></a>
+        </div>
+        <p>&copy;Copyright 2025, Paulo Fernández</p>
+    </footer>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>

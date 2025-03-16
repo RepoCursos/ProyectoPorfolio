@@ -14,7 +14,7 @@ html {
 /* seccion inicio */
 
 #inicio {
-    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/foto-inicio.webp");
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("../img/web-developer-wallpaper.png");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -318,7 +318,7 @@ html {
 
 .info {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(120px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
     justify-content: center;
     text-align: center;
     margin: 80px auto;
@@ -332,15 +332,15 @@ html {
     margin: 80px auto;
 }
 
-/* Seccion PORTFOLIO */
+/* Seccion PROYECTOS */
 
-#portfolio {
+#mis_proyectos {
     max-width: 1100px;
     padding: 100px 0;        
     margin: auto;
 }
 
-#portfolio .titulo-seccion {
+#mis_proyectos .titulo-seccion {
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
@@ -350,13 +350,13 @@ html {
     text-decoration-thickness: 5px;
 }
 
-#portfolio .fila {
+#mis_proyectos .fila {
     display: flex;
     justify-content: space-between;
     margin: 60px 0;
 }
 
-#portfolio .fila .proyecto {
+#mis_proyectos .fila .proyecto {
     max-width: 450px;
     border: 1px solid #000;
     margin: 0 10px;
@@ -364,7 +364,7 @@ html {
     overflow: hidden;
 }
 
-#portfolio .fila .proyecto img {
+#mis_proyectos .fila .proyecto img {
     width: 100%;
     height: 100%;
     filter: grayscale(1);
@@ -372,11 +372,11 @@ html {
     transition: .5s;
 }
 
-#portfolio .fila .proyecto:hover img {
+#mis_proyectos .fila .proyecto:hover img {
     filter: grayscale(0);
 }
 
-#portfolio .fila .proyecto .info {
+#mis_proyectos .fila .proyecto .info {
     position: absolute;
     left: 0;
     background-color: rgba(0, 0, 0, .8);
@@ -388,7 +388,7 @@ html {
     transition: .5s;
 }
 
-#portfolio .fila .proyecto:hover .info {
+#mis_proyectos .fila .proyecto:hover .info {
     opacity: 1;   
 }
 
@@ -480,13 +480,13 @@ footer .redes a:hover {
         padding: 50px 20px;
     }
 
-    #portfolio {
+    #mis_proyectos {
         padding: 50px 0;
     }
-    #portfolio .fila {
+    #mis_proyectos .fila {
         display: block;
     }
-    #portfolio .fila .proyecto {
+    #mis_proyectos .fila .proyecto {
         margin: 10px auto;
     }
 
@@ -494,6 +494,3 @@ footer .redes a:hover {
         display: inline-block;
     }
 }
-
-
-
